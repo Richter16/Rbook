@@ -151,7 +151,7 @@ That's already much better. At least it's no longer a blank grey canvas. We've n
 
 Geometries are the way that `ggplot2` displays information. For instance `geom_point()`\index{geom\_point()} tells `ggplot2` that you want the information to be displayed as points (making scatterplots possible for example). Given that the "final figure" uses points, this is clearly the appropriate geom to use here.
 
-Before we can do that, we need to talk about the coding structure used by `ggplot2`. The analogy that we and many others use is to say that making a figure in `ggplot2` is much like painting. What we've did in the above code was to make our "canvas". Now we are going to add sequential layers to that painting, increasing the complexity and detail over time. Each time we want to include a new layer we need to end a preceding layer with a `+` at the end to tell `ggplot2` that there are additional layers coming.
+Before we can do that, we need to talk about the coding structure used by `ggplot2`. The analogy that we and many others use is to say that making a figure in `ggplot2` is much like painting. What we did in the above code was to make our "canvas". Now we are going to add sequential layers to that painting, increasing the complexity and detail over time. Each time we want to include a new layer we need to end a preceding layer with a `+` at the end to tell `ggplot2` that there are additional layers coming.
 
 Let's add (`+`) a new geometry layer now:
 
@@ -350,7 +350,7 @@ ggplot(aes(x = weight, y = shootarea, colour = nitrogen), data = flower) +
 
 \  
 
-That's disappointing. It's pretty much the same as what we had before and is no closer to the "final figure". To fix this we need to do to rearrange our formula so that we say that it is block in relation to treatment (not in combination with).
+That's disappointing. It's pretty much the same as what we had before and is no closer to the "final figure". To fix this we need to rearrange our formula so that we say that it is block in relation to treatment (not in combination with).
 
 ```{r, echo=FALSE, out.width="7.5%", fig.align='center'}
 knitr::include_graphics(path = "images/facets.png")
